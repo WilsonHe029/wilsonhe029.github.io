@@ -5,4 +5,25 @@ theme: just-the-docs
 url: https://wilsonhe029.github.io
 
 aux_links:
-  Template Repository: https://github.com/wilsonhe029/wilson029.github.io
+  # Template Repository: https://github.com/wilsonhe029/wilson029.github.io
+  # Dark Mode: https://wilsonhe029.github.io/#
+  
+search_enabled: false
+color_scheme: light
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
