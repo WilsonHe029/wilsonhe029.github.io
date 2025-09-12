@@ -17,11 +17,11 @@ Due Date: Tuesday, September 2nd, 2025 at 11:59PM
 
 <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;">
   <div style="text-align: center;">
-    <img src="/assets/images/IMG_6797.jpeg" alt="Figure 1" style="max-width: 80%; height: auto;">
+    <img src="/assets/images/proj0/IMG_6797.jpeg" alt="Figure 1" style="max-width: 80%; height: auto;">
     <p><strong>Figure 1: Close-up Selfie</strong></p>
   </div>
   <div style="text-align: center;">
-    <img src="/assets/images/IMG_6796.jpeg" alt="Figure 2" style="max-width: 80%; height: auto;">
+    <img src="/assets/images/proj0/IMG_6796.jpeg" alt="Figure 2" style="max-width: 80%; height: auto;">
     <p><strong>Figure 2: Far Away selfie</strong></p>
   </div>
 </div>
@@ -36,11 +36,11 @@ Here are two selfies of mine. A close-up selfie (figure 1) looks weird because t
 
 <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;">
   <div style="text-align: center;">
-    <img src="/assets/images/IMG_9050.jpeg" alt="Figure 3" style="max-width: 100%; height: auto;">
+    <img src="/assets/images/proj0/IMG_9050.jpeg" alt="Figure 3" style="max-width: 100%; height: auto;">
     <p><strong>Figure 3: Himeji Castle from Far Away</strong></p>
   </div>
   <div style="text-align: center;">
-    <img src="/assets/images/IMG_9048.jpeg" alt="Figure 4" style="max-width: 100%; height: auto;">
+    <img src="/assets/images/proj0/IMG_9048.jpeg" alt="Figure 4" style="max-width: 100%; height: auto;">
     <p><strong>Figure 4: Himeji Castle Up Close</strong></p>
   </div>
 </div>
@@ -55,7 +55,7 @@ Here are two photos of the Himeji castle, one of the grandest castles in Japan. 
 
 <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;">
   <div style="text-align: center;">
-    <img src="/assets/images/ezgif-220f6d1a4e73fb.gif" alt="Figure 5" style="max-width: 60%; height: auto;">
+    <img src="/assets/images/proj0/ezgif-220f6d1a4e73fb.gif" alt="Figure 5" style="max-width: 60%; height: auto;">
     <p><strong>Figure 5: Dolly Shot</strong></p>
   </div>
 </div>
@@ -64,7 +64,7 @@ Here is a dolly-zoom GIF on an Lego Ferrari F1 car. As I moved the camera toward
 
 <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;">
   <div style="text-align: center;">
-    <img src="/assets/images/IMG_6794.jpeg" alt="Figure 6" style="max-width: 30%; height: auto;">
+    <img src="/assets/images/proj0/IMG_6794.jpeg" alt="Figure 6" style="max-width: 30%; height: auto;">
     <p><strong>Figure 6: Behind the Scenes</strong></p>
   </div>
 </div>
