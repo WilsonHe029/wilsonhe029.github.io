@@ -55,17 +55,29 @@ To handle large images efficiently, I implemented a coarse-to-fine image pyramid
 
     - Step 4: Steps 2 and 3 are repeated until the final, full-resolution level is reached, yielding a highly accurate displacement vector.
 
+4. **Feature Selection with a Sobel Filter**
+
+    Aligning the raw pixel intensities using L2 norm or NCC failed on certain images, most notably the Emir.
+
+    | Colorized Result | Green Offset | Red Offset |
+    |------------------|-------------|------------|
+    | ![Emir]({{ '/assets/images/proj1/output_emir.jpeg' | relative_url }})<br/><center>[Required, Naive] emir.tif</center> | (49, 24) | (393, -573) |
+
+    The Emir's brightly colored clothing creates vastly different intensity patterns in the red, green, and blue channels, confusing any metric based on raw brightness. However, the underlying structural edges—the outlines of his clothes, his beard, and the patterns on the wall—are much more consistent across the channels.
+
+    To exploit this, I switched from aligning raw intensities to aligning edge maps. Before building the pyramid, I first process each color channel with a Sobel filter. The Sobel operator approximates the gradient of the image's intensity, producing a new image where the brightness of each pixel corresponds to the strength of an edge at that location. The alignment pyramid is then built from these edge maps. This forces the algorithm to match the consistent structural features in the scene, making it robust to the large color and brightness variations.
+
 ---
 
 ## Results
 
-The system successfully processed all 17 test images with the following results. Notably, 16 among the 17 images achieved good alignment, while Emir unfortunately fails to align (workaround WIP).
+The system successfully processed all 17 test images with the following results, all of which achieving good alignment.
 
 | Colorized Result | Green Offset | Red Offset |
 |------------------|-------------|------------|
 | ![Cathedral]({{ '/assets/images/proj1/output_cathedral.jpeg' | relative_url }})<br/><center>[Required] cathedral.jpg</center> | (5, 2) | (12, 3) |
 | ![Church]({{ '/assets/images/proj1/output_church.jpeg' | relative_url }})<br/><center>[Required] church.tif</center> | (25, 4) | (58, -4) |
-| ![Emir]({{ '/assets/images/proj1/output_emir.jpeg' | relative_url }})<br/><center>[Required] emir.tif</center> | (49, 24) | (393, -573) |
+| ![Emir]({{ '/assets/images/proj1/output_emir_sobel.jpeg' | relative_url }})<br/><center>[Required, Sobel] emir.tif</center> | (49, 23) | (107, 40) |
 | ![Harvesters]({{ '/assets/images/proj1/output_harvesters.jpeg' | relative_url }})<br/><center>[Required] harvesters.tif</center> | (59, 17) | (123, 13) |
 | ![Icon]({{ '/assets/images/proj1/output_icon.jpeg' | relative_url }})<br/><center>[Required] icon.tif</center> | (41, 17) | (89, 23) |
 | ![Italil]({{ '/assets/images/proj1/output_italil.jpeg' | relative_url }})<br/><center>[Required] italil.tif</center> | (38, 21) | (76, 35) |
