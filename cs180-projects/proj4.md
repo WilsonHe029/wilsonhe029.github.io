@@ -20,12 +20,6 @@ nav_order: 7
 
 Due Date: Friday, November 14, 2025 at 11:59pm
 
-# Part 0: Calibrating Your Camera and Capturing a 3D Scan
-
-This initial part of the assignment involves setting up the necessary components for building a Neural Radiance Field (NeRF). This process is divided into two main steps: first, calibrating our camera to determine its intrinsic parameters, and second, capturing a 3D scan of an object using ArUco tags for pose estimation.
-
----
-
 ## Part 0.1 & 0.2: Calibrating Your Camera & Capturing a 3D Object Scan
 
 The primary goal of this step is to find the camera's intrinsic parameters, specifically the camera matrix (also known as intrinsics) and the distortion coefficients. These parameters model how the 3D world is projected onto the 2D image plane and are essential for accurately mapping 3D points to 2D pixels and vice versa.
@@ -170,7 +164,7 @@ The network produces two separate outputs:
     1.  **Density ($\sigma$)**: The main MLP's feature vector is passed through a linear layer and a **ReLU** activation to produce a single, non-negative, view-independent density value.
     2.  **Color ($\mathbf{c}$)**: The feature vector is first concatenated with the encoded viewing direction $\gamma(\mathbf{d})$. This combined vector is passed through another small MLP which outputs a 3-vector. A Sigmoid activation is applied to constrain the RGB color values to the range $[0, 1]$.
 
-## Part 2.5: Volume Rendering and Training
+## Part 2.5 & 2.6: Volume Rendering and Training
 
 We proceeded to train the Neural Radiance Field. This section covers both the rendering equation that enables training and the training results on the Lego and our custom F1 car datasets.
 
