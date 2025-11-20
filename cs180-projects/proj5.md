@@ -540,10 +540,10 @@ The low-pass filter was implemented using a Gaussian blur with a large kernel (s
 
 **The City and Playground**
 
-* Low Frequency Prompt (Far away): *"A digital illustration of a futuristic city"*
-* High Frequency Prompt (Close up): *"A photo of children playing in a park"*
+* Low Frequency Prompt (Far away): *"A photo of children playing in a park"*
+* High Frequency Prompt (Close up): *"A digital illustration of a futuristic city"*
 
-When viewed from a distance (or by squinting/blurring the image), the image appears to be a city skyline. When viewed normally (or zoomed in), the children and the green trees of the park emerge.
+When viewed from a distance (or by squinting/blurring the image), the image appears to be a two children playing in a park. When viewed normally (or zoomed in), the buildings that from the city skyline emerge, and the children's bodies begin to look like buildings as well.
 
 <div align="center">
   <img src="/assets/images/proj5/hybrid_images/part19_hybrid_image.png" width="300px" />
